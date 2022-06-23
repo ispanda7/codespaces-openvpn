@@ -12,3 +12,7 @@ cd openvpn-tmp
 if [ ! -z "${OPENVPN_CONFIG}" ]; then 
     echo "${OPENVPN_CONFIG}" > vpnconfig.ovpn
 fi
+
+if [ ! -z "${OPENVPN_PASS}" ]; then 
+    echo "${OPENVPN_PASS}" > pass.txt
+fi
